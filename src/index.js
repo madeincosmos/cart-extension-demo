@@ -5,6 +5,7 @@ import { __experimentalRegisterCheckoutFilters } from '@woocommerce/blocks-check
 
 /**
  * Internal dependencies
+ * @TODO - either figure out the proper way to include the discounted renewal block, or remove this part completely
  */
 import './blocks/discounted-renewal-notice/block';
 import './blocks/discounted-renewal-notice/frontend';

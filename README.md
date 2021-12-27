@@ -1,6 +1,6 @@
 # Cart Extension Demo
 
-A WooCommerce Admin Extension
+A WooCommerce Blocks Extension.
 
 ## Development
 

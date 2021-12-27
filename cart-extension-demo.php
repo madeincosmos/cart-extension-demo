@@ -51,10 +51,13 @@ function add_extension_register_script() {
 
 add_action( 'wp_enqueue_scripts', 'add_extension_register_script' );
 
+/**
+ * @TODO either figure out how to properly include the discounted renewal notice block or remove this part completely.
+ */
 add_action( '__experimental_woocommerce_blocks_add_data_attributes_to_block', 'register_custom_woocommerce_cart_blocks' );
 
-	// Copied from WooCommerce Blocks. This action makes the Cart block's attributes available to this block.
+// Copied from WooCommerce Blocks. This action makes the Cart block's attributes available to this block.
 function register_custom_woocommerce_cart_blocks( $whitelisted_blocks ) {
-		$whitelisted_blocks[] = 'wccom/discounted-renewal-notice';
-		return $whitelisted_blocks;
-	}
+	$whitelisted_blocks[] = 'wccom/discounted-renewal-notice';
+	return $whitelisted_blocks;
+}
