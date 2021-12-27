@@ -1,4 +1,13 @@
+/**
+ * External dependencies
+ */
 import { __experimentalRegisterCheckoutFilters } from '@woocommerce/blocks-checkout';
+
+/**
+ * Internal dependencies
+ */
+import './blocks/discounted-renewal-notice/block';
+import './blocks/discounted-renewal-notice/frontend';
 
 const appendTextToPriceInCart = ( value, extensions, args ) => {
 	if ( 'cart' !== args?.context ) {
